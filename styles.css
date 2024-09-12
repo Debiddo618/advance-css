@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+    margin-right: 20px;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    height: 90px;
+    width: 290px;
+    font-size: 28px;
+    color: white;
+    border: none;
+    background-color: blue;
+    /* transition-property: background-color color width; */
+    transition-property: all;
+    transition-duration: 3s;
+    /* transition-delay: 2s; */
+}
+
+button:hover {
+    background-color: green;
+    color: black;
+    width: 600px;
+}
+
+.move {
+    margin: 2em;
+    width: 150px;
+    height: 50px;
+    padding: 10px 15px;
+    background-color: red;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    border-radius: .5em;
+    font-size: 20px;
+    transition-property: translate();
+    transition-duration: 3s;
+}
+
+.move:hover {
+    transform: translate(900px, 0);
+}
+
+#ease {
+    transition-timing-function: ease;
+}
+
+#linear {
+    transition-timing-function: linear;
+}
+
+#ease-in {
+    transition-timing-function: ease-in;
+}
+
+#ease-out {
+    transition-timing-function: ease-out;
+}
+
+#ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+div {
+    height: 90px;
+    width: 290px;
+    font-size: 28px;
+    margin: 20px;
+    color: white;
+    border: none;
+    background-color: blue;
+    line-height: 90px;
+    text-align: center;
+    transition: all 1s;
+}
+
+.background:hover {
+    background-color: green
+}
+
+.color:hover {
+    color: red;
+}
+
+.font-size:hover {
+    font-size: 32px;
+}
+
+.height:hover {
+    height: 120px;
+}
+
+.width:hover {
+    width: 340px;
+}
+
+.letter-spacing:hover {
+    letter-spacing: 5px;
+}
+
+.line-height:hover {
+    line-height: 120px;
+}
+
+.margin-bottom:hover {
+    margin-bottom: 50px;
+}
+
+.margin-top:hover {
+    margin-top: 50px;
+}
+
+.opacity:hover {
+    opacity: .3;
+}
+
+.padding:hover {
+    padding: 20px;
+}
+
+.border-color,
+.border-width {
+    border: 6px solid green;
+}
+
+.border-color:hover {
+    border-color: red;
+}
+
+.border-width:hover {
+    border-width: 12px;
+}
+
+img {
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+    transition: transform 2s;
+}
+
+img:nth-child(2):hover {
+    transform: rotate(30deg);
+    transform-origin: top left;
+
+}
+
+/* Need to create a perspective before you can use translateZ */
+body{
+    perspective: 500px;
+}
+
+img:hover {
+    /* transform: translate(-500px,200px); */
+    /* transform: scale(100); */
+    /* transform: rotate(200grad); */
+    /* transform: skew(30deg,60deg); */
+
+    /* transform: translateZ(-300px); */
+    transform: rotateZ(120deg);
+}
+
+.rotate {
+    width: 150px;
+    height: 150px;
+    background-color: #27ae60;
+    display: block;
+    margin: auto;
+    margin-bottom: 70px;
+    color: white;
+    font-size: 24px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    line-height: 150px;
+    transition: transform 1s;
+}
+
+.rotate:hover {
+    transform: rotate(45deg);
+}
+
+
+.top {
+    transform-origin: top;
+}
+
+.right {
+    transform-origin: right;
+}
+
+.left {
+    transform-origin: left;
+}
+
+.bottom {
+    transform-origin: bottom;
+}
+
+.top-right {
+    transform-origin: top right;
+}
+
+.top-left {
+    transform-origin: top left;
+}
+
+.bottom-right {
+    transform-origin: bottom right;
+}
+
+.bottom-left {
+    transform-origin: bottom left;
+}
