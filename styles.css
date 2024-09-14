@@ -3,28 +3,6 @@ body {
     margin: 0;
     padding: 0;
 }
-nav {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    color: #fff;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
 
 button {
     height: 90px;
@@ -84,7 +62,7 @@ button:hover {
     transition-timing-function: ease-in-out;
 }
 
-div {
+.transitions div {
     height: 90px;
     width: 290px;
     font-size: 28px;

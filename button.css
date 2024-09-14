@@ -1212,38 +1212,3 @@ a.button22 {
     box-shadow: 0 0 5px #ff1f72, 0 0 15px #ff1f72, 0 0 30px #ff1f72,
       0 0 60px #ff1f72;
   }
-
-  nav {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  li {
-    display: inline;
-    margin-right: 20px;
-  }
-  li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0;
-    border: none;
-    font-size: 1rem;
-
-  }
-  li a:hover {
-    text-decoration: underline;
-  }
-
-  nav{
-    margin: 0;
-    margin-bottom: 100px;
-    width: 100%;
-    font-family: sans-serif;
-  }
