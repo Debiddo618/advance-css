@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #3b3b3b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Effect 1 */
+
+.effect1 ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #3b3b3b;
+}
+
+.effect1 li {
+  list-style: none;
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  transition: all 2s;
+}
+
+.effect1 ul:hover li {
+  transform: rotate(45deg) translateY(-200px);
+  opacity: 0;
+  filter: blur(20px);
+}
+
+.effect1 li:nth-child(1) {
+  transition-delay: 0;
+}
+.effect1 li:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.effect1 li:nth-child(3) {
+  transition-delay: 0.8s;
+}
+.effect1 li:nth-child(4) {
+  transition-delay: 1.2s;
+}
+.effect1 li:nth-child(5) {
+  transition-delay: 1.6s;
+}
+
+/* Effect 2 */
+.effect2 {
+  text-align: center;
+}
+
+.effect2 h1 {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 120px;
+  color: #ccc;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.effect2 h1:before {
+  content: "Text";
+  position: absolute;
+  color: #262626;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.effect2 h1:hover:before {
+  width: 100%;
+}
+
+/* Effect 3 */
+.effect3 {
+  text-align: center;
+  display: flex;
+}
+.effect3 .icon {
+  width: 90px;
+  height: 90px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  color: #10ac84;
+  box-shadow: 0 5px 15px -5px #00000070;
+  position: relative;
+  overflow: hidden;
+}
+.effect3 .icon i {
+  line-height: 90px;
+  font-size: 25px;
+  transition: 0.2s;
+}
+.effect3 .icon:hover i {
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+.effect3 .icon::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #10ac84;
+  left: -110%;
+  top: 90%;
+  transform: rotate(45deg);
+}
+.effect3 .icon:hover::before {
+  animation: animation 0.7s 1 forwards;
+}
+@keyframes animation {
+  0% {
+    left: -110%;
+    top: 90%;
+  }
+  50% {
+    left: 10%;
+    top: -30%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
+}
+
+/* Effect 4 */
+
+.effect4 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.effect4 h1 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.effect4 span {
+  color: #58c747;
+  font-size: 30px;
+}
+
+.effect4:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 4px solid #58c747;
+  border-bottom: 4px solid #58c747;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scaleX(0);
+}
+
+.effect4:hover:before {
+  transform: scaleX(1);
+}
+
+.effect4:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 4px solid #58c747;
+  border-left: 4px solid #58c747;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scaleY(0);
+}
+
+.effect4:hover:after {
+  transform: scaleY(1);
+  transition-delay: 0.5s;
+}
+
+.effect4 .rotated {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+}
+
+.effect4 .rotated:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 4px solid #58c747;
+  border-bottom: 4px solid #58c747;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scaleX(0);
+}
+
+.effect4:hover .rotated:before {
+  transform: scaleX(1);
+  transition-delay: 1s;
+}
+
+.effect4 .rotated:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 4px solid #58c747;
+  border-left: 4px solid #58c747;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scaleY(0);
+}
+
+.effect4:hover .rotated:after {
+  transform: scaleY(1);
+  transition-delay: 1.5s;
+}
+
+/* Effect 5 */
+
+.effect5 {
+  font-family: "Just Another Hand";
+  overflow: hidden;
+  background-color: #9b59b6;
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.effect5 ul {
+  margin: 0;
+  padding: 0;
+  font-size: 10em;
+  display: flex;
+  color: white;
+  cursor: pointer;
+}
+
+.effect5 ul:hover li {
+  transform: rotate(180deg);
+}
+
+.effect5 ul:hover li:last-child {
+  transition-delay: 0.5s;
+}
+
+.effect5 li span {
+  transition: 0.5s;
+  display: inline-block;
+}
+
+.effect5 ul:hover li:last-child span:nth-child(2) {
+  transform: rotate(180deg);
+  transition-delay: 1s;
+}
+
+.effect5 ul:hover li:last-child span:nth-child(1) {
+  transform: rotate(90deg) translateY(1rem);
+  transition-delay: 1.5s;
+}
+
+.effect5 li {
+  list-style: none;
+  transition: all 0.5s;
+  margin: 0;
+}
+
+/* Effect 6 */
+
+.effect6 {
+  font-family: monospace;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #0082ce, #ffd000);
+}
+
+.effect6 h2 {
+  position: relative;
+  display: flex;
+  gap: 15px;
+  color: white;
+  font-size: 4em;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.effect6 h2 span {
+  position: relative;
+  filter: blur(5px);
+  transition: 0.5s;
+}
+
+.effect6 span:hover {
+  filter: blur(0);
+  transition: 0s;
+}
+
+.effect6 h2 span i:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 8px;
+  background-color: white;
+  top: 0;
+  left: -5px;
+  box-shadow: 0 53px white, 37px 53px white, 36px 0 white;
+  opacity: 0;
+}
+.effect6 h2 span i:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background-color: white;
+  top: 0;
+  left: -5px;
+  box-shadow: 0 60px white, 30px 60px white, 30px 0 white;
+  opacity: 0;
+}
+
+.effect6 span:hover i:before,
+.effect6 span:hover i:after {
+  opacity: 1;
+}
+
+/* Effect 7 */
+.effect7 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #833471;
+  transition: 0.5s;
+}
+
+.effect7:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: #ffc312;
+  clip-path: circle(250px at center);
+  transition: 0.5s;
+}
+
+.effect7 .cards {
+  position: relative;
+  width: 1100px;
+  height: 400px;
+  z-index: 2;
+}
+
+.effect7 .card {
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  position: absolute;
+  top: calc(50%-200px);
+  left: 50%;
+  border-radius: 10px;
+  transform: translateX(-50%) translateY(calc(50px * var(--i))) rotate(45deg)
+    skew(-20deg, -10deg) scale(0.6);
+  box-shadow: 25px 20px 100px rgba(0, 0, 0, 0.2);
+  z-index: calc(-1 * var(--i));
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.effect7 .card:nth-child(2) {
+  opacity: 0.8;
+}
+
+.effect7 .card:nth-child(3) {
+  opacity: 0.6;
+}
+
+.effect7 .cards:hover .card {
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  transform: translateX(calc(-50% + calc(350px * var(--i))));
+}
+
+.effect7 .content {
+  position: relative;
+  padding: 25px;
+  color: #333;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.cards:hover .content {
+  opacity: 1;
+  transition-delay: calc(0.2s * var(--j));
+}
+
+/* Effect8 */
+
+.effect8 section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.effect8 section h2 {
+  font-size: 24vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1em;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
+}
+
+.effect8 section:nth-child(1) h2 {
+  background-image: url(../assets/1.jpg);
+  background-size: cover;
+}
+.effect8 section:nth-child(2) h2 {
+  background-image: url(../assets/2.jpg);
+  background-size: cover;
+}
+
+.effect8 section:nth-child(3) h2 {
+  background-image: url(../assets/3.jpg);
+  background-size: cover;
+}
+
+section:nth-child(4) h2 {
+  background-image: url(../assets/4.jpg);
+  background-size: cover;
+}
+
+.effect8 section p {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: white;
+}
+
+.effect8 section .content a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid white;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+/* Effect 9 */
+section.effect9 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section.effect9 img {
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  top: -20%;
+  left: -20%;
+  filter: blur(10px);
+  object-fit: cover;
+  transition: 2s;
+}
+
+section.effect9 h2 {
+  position: relative;
+  color: white;
+  font-size: 10em;
+  text-transform: uppercase;
+  text-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  font-weight: 800;
+  z-index: 2;
+  transition: 2s;
+}
+
+section.effect9 h2:hover {
+  filter: blur(10px);
+  transform: scale(1.2);
+}
+
+section.effect9 h2:hover ~ img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(0px);
+}
