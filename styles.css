@@ -137,12 +137,13 @@ img {
     display: block;
     margin: auto;
     margin-top: 200px;
-    transition: transform 2s;
+    transition: all 2s;
 }
 
-img:nth-child(2):hover {
+img.img1:hover {
     transform: rotate(30deg);
     transform-origin: top left;
+    
 
 }
 
@@ -151,7 +152,7 @@ body{
     perspective: 500px;
 }
 
-img:hover {
+img.img2:hover {
     /* transform: translate(-500px,200px); */
     /* transform: scale(100); */
     /* transform: rotate(200grad); */
