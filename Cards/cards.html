@@ -142,6 +142,29 @@
           <a href="#">Buy Now</a>
         </div>
       </div>
+
+      <div class="card10">
+        <div class="content">
+          <div class="contentBx">
+            <h2>paul smith<br /><span>creative developer</span></h2>
+            <div class="imgBx">
+              <img src="../assets/img.jpg" />
+            </div>
+            <button>hire me</button>
+          </div>
+        </div>
+        <div class="toggle">
+          <span></span>
+        </div>
+      </div>
     </div>
+    <script>
+      let card = document.querySelector(".card10");
+      let toggle = document.querySelector(".toggle");
+
+      toggle.addEventListener("click", () => {
+        card.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
